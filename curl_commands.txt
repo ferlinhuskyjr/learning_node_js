@@ -1,0 +1,8 @@
+// POST JSON data
+curl -i -X POST -H "Content-Type: application/json" -d "{""field1"": 123, ""field2"": ""value 2""}" localhost:8080/
+
+//POST form data
+curl -i -X POST --data "field1=123&field2=value2" "localhost:8080/"
+
+// GET
+curl -X GET -i "localhost:8080/albums/rome.json?page=1&page_size=2"
